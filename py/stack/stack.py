@@ -23,9 +23,8 @@ class Stack:
     def pop(self):
         if self.is_empty():
             return None
-        tmp, tmp_val = self.head, self.head.val
+        tmp_val = self.head.val
         self.head = self.head.next
-        tmp = None
         self._size -= 1
         return tmp_val
 
