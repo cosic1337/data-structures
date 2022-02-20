@@ -1,6 +1,6 @@
-from singly import SinglyLinkedList as singly
-from doubly import DoublyLinkedList as doubly
-from helpers import print_nodes, generate_nodes, del_nodes
+from singly import LinkedList as singly
+from doubly import LinkedList as doubly
+from helpers import generate_nodes, del_nodes
 
 def test_list(list=None, size=0, del_size=0):
     generate_nodes(size, list)
