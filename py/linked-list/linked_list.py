@@ -111,14 +111,12 @@ class LinkedList:
         fast = slow = self.head
         for _ in range(n):
             fast = fast.next
-
         if not fast:
             return self.head.next
-
         while fast.next:
             fast = fast.next
             slow = slow.next
-        return slow.next
+        return slow.next.val
 
     def reverse(self):
         if self.empty():
